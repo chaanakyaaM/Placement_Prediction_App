@@ -36,16 +36,23 @@ The app uses a pre-trained **machine learning model (`model.pkl`)** to generate 
 ```bash
    git clone https://github.com/chaanakyaaM/Placement_Prediction_App
    cd placement_prediction_app
+   uv init
 ```
+This creates a virtual environment
+
 2. Install dependencies:
 
 ```
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
 
-Place the model.pkl file in the project root.
+3. Activate the virtual environment
 
-3. Run the app:
+```
+.venv/scripts/activate
+```
+
+4. Run the app:
 
 ```
 streamlit run app.py
